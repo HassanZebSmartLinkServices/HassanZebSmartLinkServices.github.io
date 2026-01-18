@@ -1,0 +1,17 @@
+# robots.txt for HassanZeb SmartLink Services
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /cgi-bin/
+
+Sitemap: https://hassanzebsmartlinkservices.github.io/sitemap.xml
+
+# Crawl-delay: 10
+# Allow specific bots
+User-agent: Googlebot
+Allow: /
+User-agent: Bingbot
+Allow: /
+User-agent: Slurp
+Allow: /
