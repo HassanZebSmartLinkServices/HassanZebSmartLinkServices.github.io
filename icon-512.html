@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Icon Generator</title>
+    <style>
+        body { font-family: Arial; padding: 20px; }
+        canvas { border: 1px solid #ccc; margin: 10px; }
+    </style>
+</head>
+<body>
+    <h2>512x512 Icon Generator</h2>
+    <canvas id="icon512" width="512" height="512"></canvas>
+    <button onclick="downloadIcon512()">Download 512x512 Icon</button>
+    
+    <script>
+        const canvas512 = document.getElementById('icon512');
+        const ctx512 = canvas512.getContext('2d');
+        
+        // Background
+        ctx512.fillStyle = '#0066cc';
+        ctx512.fillRect(0, 0, 512, 512);
+        
+        // Circle
+        ctx512.beginPath();
+        ctx512.arc(256, 256, 200, 0, Math.PI * 2);
+        ctx512.fillStyle = '#00a8ff';
+        ctx512.fill();
+        
+        // Text
+        ctx512.fillStyle = 'white';
+        ctx512.font = 'bold 180px Arial';
+        ctx512.textAlign = 'center';
+        ctx512.textBaseline = 'middle';
+        ctx512.fillText('SL', 256, 256);
+        
+        // Small text
+        ctx512.font = 'bold 40px Arial';
+        ctx512.fillText('SmartLink', 256, 400);
+        
+        function downloadIcon512() {
+            const link = document.createElement('a');
+            link.download = 'icon-512.png';
+            link.href = canvas512.toDataURL('image/png');
+            link.click();
+        }
+    </script>
+</body>
+</html>
