@@ -2,7 +2,7 @@
 <html lang="ur" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="google-adsense-account" content="ca-pub-1417987183063486">
     <title>پرائیویسی پالیسی | SmartLink 5G Internet Service Provider</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -15,91 +15,147 @@
             --dark: #1a1a2e;
             --light: #f8fafc;
         }
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+        * { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+        }
         body {
             font-family: 'Noto Sans Arabic', sans-serif;
             background: var(--light);
             color: var(--dark);
             line-height: 1.8;
+            font-size: 16px;
         }
         .header {
             background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
             color: white;
-            padding: 30px 5%;
+            padding: 25px 5%;
             text-align: center;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
         }
         .header h1 {
-            font-size: 2.5rem;
+            font-size: 2rem;
             margin-bottom: 10px;
             font-weight: 800;
         }
         .header p {
-            font-size: 1.1rem;
-            opacity: 0.9;
+            font-size: 1rem;
         }
         .container {
             max-width: 1100px;
-            margin: 40px auto;
+            margin: 30px auto;
             padding: 0 5%;
         }
         .policy-section {
             background: white;
-            padding: 40px;
+            padding: 25px;
             border-radius: 15px;
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-            margin-bottom: 30px;
+            margin-bottom: 25px;
             border-right: 5px solid var(--primary);
         }
         .policy-section h2 {
             color: var(--primary);
-            margin-bottom: 20px;
-            font-size: 1.8rem;
+            margin-bottom: 15px;
+            font-size: 1.6rem;
             padding-bottom: 10px;
             border-bottom: 2px solid #eee;
         }
         .policy-section h3 {
             color: var(--accent);
-            margin: 25px 0 10px;
-            font-size: 1.3rem;
+            margin: 20px 0 10px;
+            font-size: 1.2rem;
         }
         .policy-section ul {
             padding-right: 20px;
-            margin: 15px 0;
+            margin: 12px 0;
         }
         .policy-section li {
-            margin-bottom: 10px;
+            margin-bottom: 8px;
             padding-right: 10px;
+            font-size: 0.95rem;
         }
         .highlight {
             background: rgba(0, 102, 204, 0.1);
-            padding: 20px;
+            padding: 15px;
             border-radius: 10px;
-            margin: 20px 0;
+            margin: 15px 0;
             border-right: 4px solid var(--accent);
         }
         .back-btn {
             display: inline-block;
             background: linear-gradient(to right, var(--primary), var(--secondary));
             color: white;
-            padding: 15px 35px;
+            padding: 12px 30px;
             border-radius: 50px;
             text-decoration: none;
             font-weight: 700;
-            margin-top: 30px;
+            margin-top: 25px;
             box-shadow: 0 4px 15px rgba(0, 102, 204, 0.3);
-            transition: all 0.3s ease;
-        }
-        .back-btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(0, 102, 204, 0.5);
+            font-size: 1rem;
         }
         .footer {
             background: var(--dark);
             color: white;
             text-align: center;
-            padding: 30px;
-            margin-top: 50px;
+            padding: 25px;
+            margin-top: 40px;
+        }
+        
+        /* موبائل ریسپانسیو */
+        @media (max-width: 768px) {
+            .header {
+                padding: 20px 5%;
+            }
+            
+            .header h1 {
+                font-size: 1.6rem;
+            }
+            
+            .container {
+                margin: 20px auto;
+            }
+            
+            .policy-section {
+                padding: 20px 15px;
+            }
+            
+            .policy-section h2 {
+                font-size: 1.4rem;
+            }
+            
+            .policy-section h3 {
+                font-size: 1.1rem;
+            }
+            
+            .highlight {
+                padding: 12px;
+            }
+            
+            .back-btn {
+                padding: 10px 25px;
+                font-size: 0.95rem;
+            }
+            
+            .footer {
+                padding: 20px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: 1.4rem;
+            }
+            
+            .policy-section {
+                padding: 15px 12px;
+            }
+            
+            .back-btn {
+                padding: 8px 20px;
+                font-size: 0.9rem;
+            }
         }
     </style>
 </head>
@@ -145,7 +201,7 @@
             <p><strong>فون:</strong> 0349-9225325</p>
             <p><strong>ای میل:</strong> hassanzeb047@gmail.com</p>
             
-            <p style="margin-top: 25px; font-size: 0.9rem; color: #666;">
+            <p style="margin-top: 20px; font-size: 0.85rem; color: #666;">
                 <strong>آخری اپ ڈیٹ:</strong> 20 مارچ 2025
             </p>
             
