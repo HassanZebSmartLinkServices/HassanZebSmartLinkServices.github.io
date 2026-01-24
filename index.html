@@ -7,6 +7,14 @@ SmartLink 5G Internet Service Provider
      crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('sw.js');
+    });
+  }
+</script>
+
 <link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#0d3153">
 <link rel="apple-touch-icon" href="icon-192.png">
