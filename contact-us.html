@@ -2,7 +2,7 @@
 <html lang="ur" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="google-adsense-account" content="ca-pub-1417987183063486">
     <title>رابطہ کریں | SmartLink 5G Internet Service Provider</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -15,39 +15,47 @@
             --dark: #1a1a2e;
             --light: #f8fafc;
         }
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+        * { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+        }
         body {
             font-family: 'Noto Sans Arabic', sans-serif;
             background: var(--light);
             color: var(--dark);
             line-height: 1.8;
+            font-size: 16px; /* موبائل پر زوم روکنے کے لیے */
         }
         .header {
             background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
             color: white;
-            padding: 30px 5%;
+            padding: 25px 5%;
             text-align: center;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
         }
         .header h1 {
-            font-size: 2.5rem;
+            font-size: 2rem;
             margin-bottom: 10px;
             font-weight: 800;
         }
+        .header p {
+            font-size: 1rem;
+        }
         .container {
             max-width: 1100px;
-            margin: 40px auto;
+            margin: 30px auto;
             padding: 0 5%;
         }
         .contact-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin: 40px 0;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
         }
         .contact-card {
             background: white;
-            padding: 35px;
+            padding: 25px;
             border-radius: 15px;
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
             text-align: center;
@@ -57,51 +65,135 @@
             transform: translateY(-5px);
         }
         .contact-icon {
-            width: 80px;
-            height: 80px;
+            width: 70px;
+            height: 70px;
             background: linear-gradient(135deg, var(--primary), var(--secondary));
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 0 auto 20px;
+            margin: 0 auto 15px;
             color: white;
-            font-size: 2rem;
+            font-size: 1.8rem;
         }
         .whatsapp-btn {
             background: #25D366;
             color: white;
-            padding: 12px 30px;
+            padding: 10px 25px;
             border-radius: 50px;
             text-decoration: none;
             display: inline-flex;
             align-items: center;
-            gap: 10px;
+            gap: 8px;
             font-weight: 600;
-            margin-top: 15px;
+            margin-top: 12px;
             box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+            font-size: 0.95rem;
         }
         .back-btn {
             display: inline-block;
             background: linear-gradient(to right, var(--primary), var(--secondary));
             color: white;
-            padding: 15px 35px;
+            padding: 12px 30px;
             border-radius: 50px;
             text-decoration: none;
             font-weight: 700;
-            margin-top: 30px;
+            margin-top: 25px;
             box-shadow: 0 4px 15px rgba(0, 102, 204, 0.3);
+            font-size: 1rem;
         }
         .map-placeholder {
             background: #eef2f7;
-            height: 300px;
+            height: 250px;
             border-radius: 15px;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 40px 0;
+            margin: 30px 0;
             color: #666;
-            font-size: 1.1rem;
+            font-size: 1rem;
+        }
+        
+        /* موبائل ریسپانسیو */
+        @media (max-width: 768px) {
+            .header {
+                padding: 20px 5%;
+            }
+            
+            .header h1 {
+                font-size: 1.6rem;
+            }
+            
+            .header p {
+                font-size: 0.9rem;
+            }
+            
+            .container {
+                margin: 20px auto;
+            }
+            
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .contact-card {
+                padding: 20px 15px;
+            }
+            
+            .contact-icon {
+                width: 60px;
+                height: 60px;
+                font-size: 1.5rem;
+            }
+            
+            .whatsapp-btn, .back-btn {
+                padding: 10px 20px;
+                font-size: 0.9rem;
+            }
+            
+            .map-placeholder {
+                height: 200px;
+                font-size: 0.9rem;
+            }
+            
+            h2 {
+                font-size: 1.3rem !important;
+            }
+            
+            h3 {
+                font-size: 1.1rem !important;
+            }
+            
+            p {
+                font-size: 0.95rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: 1.4rem;
+            }
+            
+            .contact-card {
+                padding: 15px 12px;
+            }
+            
+            .contact-icon {
+                width: 50px;
+                height: 50px;
+                font-size: 1.3rem;
+            }
+            
+            .whatsapp-btn, .back-btn {
+                padding: 8px 16px;
+                font-size: 0.85rem;
+            }
+            
+            .map-placeholder {
+                height: 180px;
+                font-size: 0.85rem;
+            }
         }
     </style>
 </head>
@@ -112,8 +204,8 @@
     </div>
 
     <div class="container">
-        <div style="text-align: center; margin-bottom: 30px;">
-            <h2 style="color: var(--primary); font-size: 1.8rem;">ہم سے کسی بھی وقت رابطہ کریں</h2>
+        <div style="text-align: center; margin-bottom: 25px;">
+            <h2 style="color: var(--primary); font-size: 1.5rem;">ہم سے کسی بھی وقت رابطہ کریں</h2>
             <p style="color: #666;">ہم 24/7 آپ کی خدمت کے لیے موجود ہیں</p>
         </div>
 
@@ -122,58 +214,58 @@
                 <div class="contact-icon">
                     <i class="fas fa-phone-alt"></i>
                 </div>
-                <h3 style="color: var(--primary); margin-bottom: 15px;">فون کال</h3>
-                <p style="font-size: 1.3rem; font-weight: 700; color: var(--dark); margin-bottom: 10px;">0349-9225325</p>
-                <p style="color: #666; margin-bottom: 10px;">واٹس ایپ کے لیے</p>
-                <p style="font-size: 0.9rem; color: #999;">صبح 9 بجے سے رات 9 بجے تک</p>
+                <h3 style="color: var(--primary); margin-bottom: 12px;">فون کال</h3>
+                <p style="font-size: 1.2rem; font-weight: 700; color: var(--dark); margin-bottom: 8px;">0349-9225325</p>
+                <p style="color: #666; margin-bottom: 8px;">واٹس ایپ کے لیے</p>
+                <p style="font-size: 0.85rem; color: #999;">صبح 9 بجے سے رات 9 بجے تک</p>
             </div>
 
             <div class="contact-card">
                 <div class="contact-icon">
                     <i class="fab fa-whatsapp"></i>
                 </div>
-                <h3 style="color: var(--primary); margin-bottom: 15px;">واٹس ایپ</h3>
-                <p style="color: #666; margin-bottom: 15px;">فوری جواب کے لیے واٹس ایپ پر میسج کریں</p>
+                <h3 style="color: var(--primary); margin-bottom: 12px;">واٹس ایپ</h3>
+                <p style="color: #666; margin-bottom: 12px;">فوری جواب کے لیے واٹس ایپ پر میسج کریں</p>
                 <a href="https://wa.me/923499225325" class="whatsapp-btn" target="_blank">
                     <i class="fab fa-whatsapp"></i> واٹس ایپ میسج
                 </a>
-                <p style="font-size: 0.9rem; color: #999; margin-top: 15px;">24/7 دستیاب</p>
+                <p style="font-size: 0.85rem; color: #999; margin-top: 12px;">24/7 دستیاب</p>
             </div>
 
             <div class="contact-card">
                 <div class="contact-icon">
                     <i class="fas fa-envelope"></i>
                 </div>
-                <h3 style="color: var(--primary); margin-bottom: 15px;">ای میل</h3>
-                <p style="font-size: 1.1rem; font-weight: 600; color: var(--dark); margin-bottom: 10px;">hassanzeb047@gmail.com</p>
-                <p style="color: #666; margin-bottom: 15px;">کاروباری معاملات کے لیے ای میل کریں</p>
-                <a href="mailto:hassanzeb047@gmail.com" style="color: var(--primary); text-decoration: none; font-weight: 600;">
+                <h3 style="color: var(--primary); margin-bottom: 12px;">ای میل</h3>
+                <p style="font-size: 1rem; font-weight: 600; color: var(--dark); margin-bottom: 8px;">hassanzeb047@gmail.com</p>
+                <p style="color: #666; margin-bottom: 12px;">کاروباری معاملات کے لیے ای میل کریں</p>
+                <a href="mailto:hassanzeb047@gmail.com" style="color: var(--primary); text-decoration: none; font-weight: 600; font-size: 0.95rem;">
                     <i class="fas fa-paper-plane"></i> ای میل بھیجیں
                 </a>
             </div>
         </div>
 
-        <div class="contact-card" style="margin: 40px 0;">
+        <div class="contact-card" style="margin: 30px 0;">
             <div class="contact-icon" style="background: linear-gradient(135deg, #ff6b35, #ff8c42);">
                 <i class="fas fa-map-marker-alt"></i>
             </div>
-            <h3 style="color: var(--primary); margin-bottom: 15px;">آفس کا پتہ</h3>
-            <p style="font-size: 1.2rem; font-weight: 600; margin-bottom: 10px;">مین جی ٹی روڈ، ترناب فارم، وارث خان</p>
-            <p style="color: #666; margin-bottom: 10px;">ہنی مارکیٹ، پشاور</p>
-            <p style="font-size: 0.9rem; color: #999;"><i class="fas fa-clock"></i> ہفتے کے سات دن صبح 9 بجے سے رات 9 بجے تک</p>
+            <h3 style="color: var(--primary); margin-bottom: 12px;">آفس کا پتہ</h3>
+            <p style="font-size: 1.1rem; font-weight: 600; margin-bottom: 8px;">مین جی ٹی روڈ، ترناب فارم، وارث خان</p>
+            <p style="color: #666; margin-bottom: 8px;">ہنی مارکیٹ، پشاور</p>
+            <p style="font-size: 0.85rem; color: #999;"><i class="fas fa-clock"></i> ہفتے کے سات دن صبح 9 بجے سے رات 9 بجے تک</p>
         </div>
 
         <div class="map-placeholder">
             <div style="text-align: center;">
-                <i class="fas fa-map-marked-alt" style="font-size: 3rem; color: var(--primary); margin-bottom: 15px;"></i>
+                <i class="fas fa-map-marked-alt" style="font-size: 2.5rem; color: var(--primary); margin-bottom: 12px;"></i>
                 <p>Google Map: پشاور، ترناب فارم، وارث خان</p>
-                <p style="font-size: 0.9rem; margin-top: 10px;">مین جی ٹی روڈ پر واقع</p>
+                <p style="font-size: 0.85rem; margin-top: 8px;">مین جی ٹی روڈ پر واقع</p>
             </div>
         </div>
 
-        <div style="text-align: center; margin-top: 40px;">
-            <h3 style="color: var(--primary); margin-bottom: 20px;">فوری رابطے کے لیے</h3>
-            <p style="color: #666; margin-bottom: 30px; max-width: 800px; margin-left: auto; margin-right: auto;">
+        <div style="text-align: center; margin-top: 30px;">
+            <h3 style="color: var(--primary); margin-bottom: 15px;">فوری رابطے کے لیے</h3>
+            <p style="color: #666; margin-bottom: 25px; max-width: 800px; margin-left: auto; margin-right: auto;">
                 کسی بھی مسئلے، سروس کے لیے، یا نئے کنکشن کے لیے فون کریں یا واٹس ایپ پر میسج کریں۔ 
                 ہمارا ٹیم فوری طور پر آپ کی مدد کے لیے موجود ہوگا۔
             </p>
