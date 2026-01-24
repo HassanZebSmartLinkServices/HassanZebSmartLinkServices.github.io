@@ -2,7 +2,7 @@
 <html lang="ur" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="google-adsense-account" content="ca-pub-1417987183063486">
     <title>دستبرداری | SmartLink 5G Internet Service Provider</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -15,62 +15,123 @@
             --dark: #1a1a2e;
             --light: #f8fafc;
         }
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+        * { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+        }
         body {
             font-family: 'Noto Sans Arabic', sans-serif;
             background: var(--light);
             color: var(--dark);
             line-height: 1.8;
+            font-size: 16px;
         }
         .header {
             background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
             color: white;
-            padding: 30px 5%;
+            padding: 25px 5%;
             text-align: center;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
         }
         .header h1 {
-            font-size: 2.5rem;
+            font-size: 2rem;
             margin-bottom: 10px;
             font-weight: 800;
         }
         .container {
             max-width: 1100px;
-            margin: 40px auto;
+            margin: 30px auto;
             padding: 0 5%;
         }
         .disclaimer-section {
             background: white;
-            padding: 40px;
+            padding: 25px;
             border-radius: 15px;
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-            margin-bottom: 30px;
+            margin-bottom: 25px;
         }
         .warning-box {
             background: rgba(255, 107, 53, 0.15);
-            padding: 25px;
+            padding: 20px;
             border-radius: 10px;
-            margin: 25px 0;
+            margin: 20px 0;
             border: 2px solid var(--accent);
             text-align: center;
         }
         .info-box {
             background: rgba(0, 102, 204, 0.08);
-            padding: 20px;
+            padding: 15px;
             border-radius: 10px;
-            margin: 20px 0;
+            margin: 15px 0;
             border-right: 4px solid var(--primary);
         }
         .back-btn {
             display: inline-block;
             background: linear-gradient(to right, var(--primary), var(--secondary));
             color: white;
-            padding: 15px 35px;
+            padding: 12px 30px;
             border-radius: 50px;
             text-decoration: none;
             font-weight: 700;
-            margin-top: 30px;
+            margin-top: 25px;
             box-shadow: 0 4px 15px rgba(0, 102, 204, 0.3);
+            font-size: 1rem;
+        }
+        
+        /* موبائل ریسپانسیو */
+        @media (max-width: 768px) {
+            .header {
+                padding: 20px 5%;
+            }
+            
+            .header h1 {
+                font-size: 1.6rem;
+            }
+            
+            .container {
+                margin: 20px auto;
+            }
+            
+            .disclaimer-section {
+                padding: 20px 15px;
+            }
+            
+            .warning-box {
+                padding: 15px;
+            }
+            
+            .info-box {
+                padding: 12px;
+            }
+            
+            .back-btn {
+                padding: 10px 25px;
+                font-size: 0.95rem;
+            }
+            
+            h2 {
+                font-size: 1.4rem !important;
+            }
+            
+            h3 {
+                font-size: 1.2rem !important;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: 1.4rem;
+            }
+            
+            .disclaimer-section {
+                padding: 15px 12px;
+            }
+            
+            .back-btn {
+                padding: 8px 20px;
+                font-size: 0.9rem;
+            }
         }
     </style>
 </head>
@@ -83,15 +144,15 @@
     <div class="container">
         <div class="disclaimer-section">
             <div class="warning-box">
-                <h2 style="color: var(--accent); margin-bottom: 15px; font-size: 1.8rem;">
+                <h2 style="color: var(--accent); margin-bottom: 12px; font-size: 1.5rem;">
                     <i class="fas fa-exclamation-triangle"></i> اہم انتباہ
                 </h2>
-                <p style="font-size: 1.1rem; font-weight: 600;">
+                <p style="font-size: 1rem; font-weight: 600;">
                     ویب سائٹ پر موجود تمام معلومات عمومی معلومات کے لیے ہیں۔
                 </p>
             </div>
             
-            <h3 style="color: var(--primary); margin: 30px 0 15px; font-size: 1.5rem;">1. معلومات کی درستگی</h3>
+            <h3 style="color: var(--primary); margin: 25px 0 12px; font-size: 1.3rem;">1. معلومات کی درستگی</h3>
             <p>ہم ویب سائٹ پر موجود تمام معلومات کی درستگی، مکمل ہونے، یا تازہ ترین ہونے کی کوئی ضمانت نہیں دیتے۔ معلومات میں تبدیلی بغیر اطلاع کے ہو سکتی ہے۔</p>
             
             <div class="info-box">
@@ -99,12 +160,12 @@
                 <p>انٹرنیٹ پیکیجز اور قیمتوں میں تبدیلی ہو سکتی ہے۔ موجودہ قیمتوں کے لیے ہم سے رابطہ کریں۔</p>
             </div>
             
-            <h3 style="color: var(--primary); margin: 30px 0 15px; font-size: 1.5rem;">2. سروس کی دستیابی</h3>
+            <h3 style="color: var(--primary); margin: 25px 0 12px; font-size: 1.3rem;">2. سروس کی دستیابی</h3>
             <p>ہماری سروسز کی دستیابی علاقے پر منحصر ہے۔ تمام علاقوں میں تمام سروسز دستیاب نہیں ہیں۔ سروس کی دستیابی کے لیے ہم سے رابطہ کریں۔</p>
             
-            <h3 style="color: var(--primary); margin: 30px 0 15px; font-size: 1.5rem;">3. تکنیکی معلومات</h3>
+            <h3 style="color: var(--primary); margin: 25px 0 12px; font-size: 1.3rem;">3. تکنیکی معلومات</h3>
             <p>تیز رفتار انٹرنیٹ کی سپیڈ بہت سے عوامل پر منحصر ہے:</p>
-            <ul>
+            <ul style="padding-right: 20px; margin: 10px 0;">
                 <li>نیٹ ورک کی مصروفیت</li>
                 <li>آپ کے ڈیوائس کی صلاحیت</li>
                 <li>فاصلہ اور کنکشن کا معیار</li>
@@ -112,26 +173,26 @@
                 <li>موسمی حالات</li>
             </ul>
             
-            <h3 style="color: var(--primary); margin: 30px 0 15px; font-size: 1.5rem;">4. بیرونی لنکس</h3>
+            <h3 style="color: var(--primary); margin: 25px 0 12px; font-size: 1.3rem;">4. بیرونی لنکس</h3>
             <p>ہماری ویب سائٹ پر دیگر ویب سائٹس کے لنکس ہو سکتے ہیں۔ ہم ان ویب سائٹس کے مواد، پرائیویسی پالیسی یا طریقہ کار کی ذمہ داری قبول نہیں کرتے۔</p>
             
-            <h3 style="color: var(--primary); margin: 30px 0 15px; font-size: 1.5rem;">5. گوگل ایڈسین</h3>
+            <h3 style="color: var(--primary); margin: 25px 0 12px; font-size: 1.3rem;">5. گوگل ایڈسین</h3>
             <p>ہماری ویب سائٹ گوگل ایڈسین کے اشتہارات دکھاتی ہے۔ گوگل اپنی پرائیویسی پالیسی کے تحت اشتہارات دکھاتا ہے۔ ہم اشتہارات کے مواد کی ذمہ داری قبول نہیں کرتے۔</p>
             
-            <h3 style="color: var(--primary); margin: 30px 0 15px; font-size: 1.5rem;">6. قانونی مشورہ نہیں</h3>
+            <h3 style="color: var(--primary); margin: 25px 0 12px; font-size: 1.3rem;">6. قانونی مشورہ نہیں</h3>
             <p>ویب سائٹ پر موجود کوئی بھی معلومات قانونی مشورہ نہیں ہے۔ قانونی معاملات کے لیے وکیل سے مشورہ کریں۔</p>
             
-            <h3 style="color: var(--primary); margin: 30px 0 15px; font-size: 1.5rem;">7. مالی مشورہ نہیں</h3>
+            <h3 style="color: var(--primary); margin: 25px 0 12px; font-size: 1.3rem;">7. مالی مشورہ نہیں</h3>
             <p>ہم کوئی مالی مشورے نہیں دیتے۔ سرمایہ کاری سے پہلے مالیاتی ماہر سے مشورہ کریں۔</p>
             
-            <div class="warning-box" style="margin-top: 40px;">
-                <h3 style="color: var(--accent); margin-bottom: 15px;">استعمال کی شرائط</h3>
+            <div class="warning-box" style="margin-top: 30px;">
+                <h3 style="color: var(--accent); margin-bottom: 12px;">استعمال کی شرائط</h3>
                 <p>اس ویب سائٹ کا استعمال آپ کی اس دستبرداری سے اتفاق کی نشاندہی کرتا ہے۔</p>
-                <p style="margin-top: 10px; font-weight: 600;">اگر آپ ان شرائط سے متفق نہیں ہیں، تو براہ کرم ویب سائٹ کا استعمال نہ کریں۔</p>
+                <p style="margin-top: 8px; font-weight: 600;">اگر آپ ان شرائط سے متفق نہیں ہیں، تو براہ کرم ویب سائٹ کا استعمال نہ کریں۔</p>
             </div>
             
-            <div style="text-align: center; margin-top: 40px;">
-                <p style="color: #666; font-size: 0.9rem; margin-bottom: 20px;">
+            <div style="text-align: center; margin-top: 30px;">
+                <p style="color: #666; font-size: 0.85rem; margin-bottom: 15px;">
                     <strong>آخری اپ ڈیٹ:</strong> 20 مارچ 2025
                 </p>
                 
