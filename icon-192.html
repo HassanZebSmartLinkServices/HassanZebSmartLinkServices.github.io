@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Icon Generator</title>
+    <style>
+        body { font-family: Arial; padding: 20px; }
+        canvas { border: 1px solid #ccc; margin: 10px; }
+    </style>
+</head>
+<body>
+    <h2>192x192 Icon Generator</h2>
+    <canvas id="icon192" width="192" height="192"></canvas>
+    <button onclick="downloadIcon192()">Download 192x192 Icon</button>
+    
+    <script>
+        const canvas192 = document.getElementById('icon192');
+        const ctx192 = canvas192.getContext('2d');
+        
+        // Background
+        ctx192.fillStyle = '#0066cc';
+        ctx192.fillRect(0, 0, 192, 192);
+        
+        // Circle
+        ctx192.beginPath();
+        ctx192.arc(96, 96, 80, 0, Math.PI * 2);
+        ctx192.fillStyle = '#00a8ff';
+        ctx192.fill();
+        
+        // Text
+        ctx192.fillStyle = 'white';
+        ctx192.font = 'bold 60px Arial';
+        ctx192.textAlign = 'center';
+        ctx192.textBaseline = 'middle';
+        ctx192.fillText('SL', 96, 96);
+        
+        function downloadIcon192() {
+            const link = document.createElement('a');
+            link.download = 'icon-192.png';
+            link.href = canvas192.toDataURL('image/png');
+            link.click();
+        }
+    </script>
+</body>
+</html>
